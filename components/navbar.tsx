@@ -40,7 +40,7 @@ export function Navbar({ language, dict }: NavbarProps) {
                 alt="Carlos Peralta Logo"
                 width={100}
                 height={100}
-                className="w-8 h-8 sm:w-20 sm:h-20"
+                className="w-15 h-15 sm:w-20 sm:h-20"
               />
             </Link>
           </motion.div>
