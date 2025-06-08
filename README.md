@@ -2,7 +2,7 @@
 
 ### 🧐 About
 
-This is a simple portfolio made with HTML, CSS, and Tailwind CSS. It's a one-page responsive portfolio that you can use as a reference or inspiration for your own projects.
+This is a simple portfolio made with NexjJs and Tailwind CSS. It's a one-page responsive portfolio that you can use as a reference or inspiration for your own projects.
 
 ### 💻 Technologies
 
