@@ -170,7 +170,7 @@ export function Contact({ dict }: ContactProps) {
             viewport={{ once: true }}
             className="space-y-6"
           >
-            <div className="bg-gradient-to-br from-dark/80 to-dark/60 backdrop-blur-sm border border-mint/20 rounded-xl p-6 sm:p-8">
+            <div className="bg-gradient-to-br from-dark/80 to-dark/60 backdrop-blur-sm border border-mint/20 rounded-xl p-2 sm:p-8">
               <h3 className="text-xl sm:text-2xl font-bold text-white mb-6">{dict.contact.contactme}</h3>
 
               <div className="space-y-4">
@@ -189,7 +189,7 @@ export function Contact({ dict }: ContactProps) {
                     </div>
                     <div>
                       <div className="text-gray-400 text-sm">{info.label}</div>
-                      <div className="text-white font-medium">{info.value}</div>
+                      <div className="text-white font-medium overflow-hidden text-sm">{info.value}</div>
                     </div>
                   </motion.a>
                 ))}

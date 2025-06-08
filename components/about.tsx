@@ -141,7 +141,7 @@ export function About({ dict }: AboutProps) {
                 initial={{ opacity: 0, x: -50 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6 }}
-                className="flex justify-center lg:justify-start col-span-1"
+                className="flex justify-center transform translate-x-5 lg:justify-start col-span-1"
               >
                 <div className="relative w-64 h-64 sm:w-80 sm:h-80 overflow-hidden rounded-xl border-2 border-mint/30">
                   <Image
