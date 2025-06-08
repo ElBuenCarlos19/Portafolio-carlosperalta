@@ -14,7 +14,7 @@ import {
   FaTimes,
   FaLinkedin,
   FaGithub,
-  FaTwitter,
+  FaInstagram,
   FaPhone,
   FaMapMarkerAlt,
 } from "react-icons/fa"
@@ -62,7 +62,7 @@ const contactInfo = [
 const socialLinks = [
   { icon: FaLinkedin, href: "https://www.linkedin.com/in/carlos-peralta-a87a0624b", color: "#0077B5" },
   { icon: FaGithub, href: "https://github.com/ElBuenCarlos19", color: "#333" },
-  { icon: FaTwitter, href: "https://www.instagram.com/carlos.__.1910?igsh=MTd3YXhmaHl2MHlkMw==", color: "#1DA1F2" },
+  { icon: FaInstagram, href: "https://www.instagram.com/carlos.__.1910?igsh=MTd3YXhmaHl2MHlkMw==", color: "#1DA1F2" },
 ]
 
 export function Contact({ dict }: ContactProps) {
