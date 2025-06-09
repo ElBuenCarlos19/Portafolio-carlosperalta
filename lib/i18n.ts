@@ -27,7 +27,7 @@ const dictionaries = {
           title: "Sobre mí",
           description: "Soy un joven apasionado por la tecnología y la música con 20 años de edad.",
           content:
-            "Soy un entusiasta de la tecnología con una pasión por crear soluciones innovadoras. A mis 20 años, domino gran parte de mi formación en ingeniería de sistemas y desarrollo de software. Me caracterizo por mi capacidad de aprendizaje rápido y mi dedicación para enfrentar nuevos desafíos. Siempre estoy buscando expandir mis conocimientos y habilidades en diferentes áreas.",
+            "Soy un entusiasta de la tecnología con una pasión por crear soluciones innovadoras. A mis 20 años, domino gran parte de mi formación en ingeniería de sistemas y desarrollo de software. Me caracterizo mi dedicación para enfrentar nuevos desafíos. Siempre estoy buscando expandir mis conocimientos y habilidades en diferentes áreas.",
           icons: {
             age: "20 años",
             proactive: "Proactivo",
@@ -231,7 +231,7 @@ const dictionaries = {
           title: "About me",
           description: "I'm a young person passionate about technology and music, 20 years old.",
           content:
-            "I'm a technology enthusiast with a passion for creating innovative solutions. At 20 years old, I master a large part of my training in systems engineering and software development. I'm characterized by my rapid learning ability and dedication to face new challenges. I'm always looking to expand my knowledge and skills in different areas.",
+            "I'm a technology enthusiast with a passion for creating innovative solutions. At 20 years old, I master a large part of my training in systems engineering and software development. I'm characterized by my dedication to face new challenges. I'm always looking to expand my knowledge and skills in different areas.",
           icons: {
             age: "20 years old",
             proactive: "Proactive",
