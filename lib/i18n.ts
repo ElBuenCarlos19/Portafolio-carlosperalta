@@ -27,7 +27,7 @@ const dictionaries = {
           title: "Sobre mí",
           description: "Soy un joven apasionado por la tecnología y la música con 20 años de edad.",
           content:
-            "Soy un entusiasta de la tecnología con una pasión por crear soluciones innovadoras. A mis 20 años, domino gran parte de mi formación en ingeniería de sistemas y desarrollo de software. Me caracterizo mi dedicación para enfrentar nuevos desafíos. Siempre estoy buscando expandir mis conocimientos y habilidades en diferentes áreas.",
+            "Soy un entusiasta de la tecnología con una pasión por crear soluciones innovadoras. A mis 20 años, domino gran parte de mi formación en ingeniería de sistemas y desarrollo de software. Me caracterizo por mi dedicación para enfrentar nuevos desafíos. Siempre estoy buscando expandir mis conocimientos y habilidades en diferentes áreas.",
           icons: {
             age: "20 años",
             proactive: "Proactivo",
