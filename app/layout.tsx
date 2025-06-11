@@ -11,9 +11,9 @@ export const metadata: Metadata = {
   title: "Carlos Peralta - Portafolio",
   description: "Ingeniero en sistemas & desarrollador de software",
   icons: {
-    icon: "/logo.png",
-    shortcut: "/logo.png",
-    apple: "/logo.png",
+    icon: "/Logo.png",
+    shortcut: "/Logo.png",
+    apple: "/Logo.png",
   },
 }
 
