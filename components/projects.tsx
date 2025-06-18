@@ -96,7 +96,7 @@ export function Projects({ dict }: ProjectsProps) {
         { icon: RiSupabaseFill, name: "Supabase", color: "#339933" },
         { icon: FaJs, name: "JavaScript", color: "#f7df1e" },
       ],
-      github: "https://github.com/ElBuenCarlos19/AppBaqPark",
+      github: "https://github.com/ElBuenCarlos19/GestorDeFerreteria-",
       demo: "#",
     },
     {

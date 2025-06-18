@@ -180,7 +180,7 @@ export function Hero({ dict }: HeroProps) {
 
   const downloadCV = () => {
     const link = document.createElement("a")
-    link.href = "/HV.pdf"
+    link.href = "/Carlos Peralta CV.pdf"
     link.download = "Carlos_Peralta_CV.pdf"
     document.body.appendChild(link)
     link.click()
