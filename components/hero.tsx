@@ -186,7 +186,7 @@ export function Hero({ dict }: HeroProps) {
     link.click()
     document.body.removeChild(link)
   }
-  
+
   const handleMouseEnter = () => {
     setTriggerEffect(true)
   }
