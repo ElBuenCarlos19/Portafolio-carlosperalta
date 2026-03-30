@@ -2,8 +2,8 @@
 
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
-import { FaGithub, FaExternalLinkAlt, FaPython, FaHtml5, FaJs, FaCss3, FaTimes } from "react-icons/fa"
-import { SiNextdotjs, SiTailwindcss, SiExpo, SiNestjs } from "react-icons/si"
+import { FaGithub, FaExternalLinkAlt, FaPython, FaHtml5, FaJs, FaCss3, FaTimes, FaJava, FaFlask } from "react-icons/fa"
+import { SiNextdotjs, SiTailwindcss, SiExpo, SiNestjs, SiTypescript } from "react-icons/si"
 import { DiMysql } from "react-icons/di"
 import { RiSupabaseFill } from "react-icons/ri"
 import { IoLogoElectron } from "react-icons/io5"
@@ -131,6 +131,35 @@ export function Projects({ dict }: ProjectsProps) {
       technologies: [{ icon: SiNextdotjs, name: "Next.js", color: "#000000" }],
       github: "#",
       demo: "https://colombia-forest-app.vercel.app",
+    },
+    {
+      id: 10,
+      title: dict.projects.list[9].title,
+      description: dict.projects.list[9].description,
+      image: "/project10.png",
+      technologies: [{ icon: FaJava, name: "Java", color: "#fffff" },
+      { icon: FaPython, name: "Python", color: "#3776AB" }
+      ],
+      github: "https://github.com/ElBuenCarlos19/practicaappmineriadedatos",
+      demo: "#",
+    },
+    {
+      id: 11,
+      title: dict.projects.list[10].title,
+      description: dict.projects.list[10].description,
+      image: "/project11.png",
+      technologies: [{ icon: SiNextdotjs, name: "Next.js", color: "#000000" }, { icon: SiTailwindcss, name: "Tailwind CSS", color: "#61DAFB" }, { icon: SiTypescript, name: "TypeScript", color: "#3178c6" }],
+      github: "https://github.com/ElBuenCarlos19/proyectcom",
+      demo: "https://proyectcomsas.com",
+    },
+    {
+      id: 12,
+      title: dict.projects.list[11].title,
+      description: dict.projects.list[11].description,
+      image: "/project12.png",
+      technologies: [{ icon: SiExpo, name: "Expo", color: "#000000" }, { icon: FaPython, name: "Python", color: "#3776AB" }, { icon: DiMysql, name: "MySQL", color: "#47A248" }],
+      github: "https://github.com/ElBuenCarlos19/VG_Sales_MachineLearning",
+      demo: "#",
     },
   ]
 

@@ -146,6 +146,18 @@ const dictionaries = {
           description:
             "Un aplicativo web de interfaces en el cual se muestra la simulación de un sistema de gestión de tala de árboles.",
         },
+        {
+          title: "Scrapping de datos",
+          description: "Se creo un chatbot en el cual se puede enviar link de la bases de Datos abiertos del gobierno y te genera reportes de los datos.",
+        },
+        {
+          title: "Pagina web Proyectcom",
+          description: "Pagina web para una empresa de sistemas de seguridad y vigilancia.",
+        },
+        {
+          title: "Video Game Sales Analisis con Machine Learning",
+          description: "App movil que usa una data para hacer predicciones de ventas de videojuegos y demas analisis.",
+        },
       ],
     },
     certificates: {
@@ -349,6 +361,19 @@ const dictionaries = {
           title: "Tree cutting management system",
           description:
             "A web application with interfaces that shows the simulation of a tree cutting management system.",
+        },
+        {
+          title: "Data Scraping",
+          description:
+            "A chatbot was created where you can send links to government open databases and it generates data reports.",
+        },
+        {
+          title: "Proyectcom Website",
+          description: "Website for a security and surveillance systems company.",
+        },
+        {
+          title: "Video Game Sales Analysis with Machine Learning",
+          description: "Mobile app that uses data to make video game sales predictions and other analyses.",
         },
       ],
     },
