@@ -18,6 +18,7 @@ export function Navbar({ language, dict }: NavbarProps) {
 
   const navItems = [
     { key: "about", href: `/${language}#about` },
+    { key: "experience", href: `/${language}#experience` },
     { key: "projects", href: `/${language}#projects` },
     { key: "certificates", href: `/${language}#certificates` },
     { key: "contact", href: `/${language}#contact` },

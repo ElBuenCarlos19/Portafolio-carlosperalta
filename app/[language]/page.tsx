@@ -1,11 +1,13 @@
 import { Navbar } from "@/components/navbar"
 import { Hero } from "@/components/hero"
 import { About } from "@/components/about"
+import { Experience } from "@/components/experience"
 import { Projects } from "@/components/projects"
 import { Certificates } from "@/components/certificates"
 import { SpotifyPlaylist } from "@/components/spotify-playlist"
 import { Contact } from "@/components/contact"
 import { LoadingScreen } from "@/components/loading-screen"
+import { ScrollAmbientBackground } from "@/components/scroll-ambient-background"
 import { getDictionary } from "@/lib/i18n"
 
 export default async function Home({
@@ -18,10 +20,13 @@ export default async function Home({
 
   return (
     <>
-      <main className="min-h-screen bg-dark">
+      <LoadingScreen />
+      <main className="min-h-screen bg-dark relative">
+        <ScrollAmbientBackground />
         <Navbar language={language} dict={dict} />
         <Hero dict={dict} />
         <About dict={dict} />
+        <Experience dict={dict} />
         <Projects dict={dict} />
         <Certificates dict={dict} />
         <SpotifyPlaylist dict={dict} />

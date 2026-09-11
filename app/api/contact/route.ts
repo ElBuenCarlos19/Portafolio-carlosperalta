@@ -5,11 +5,14 @@ import nodemailer from "nodemailer"
 const rateLimitMap = new Map<string, number>()
 
 // Configurar el transporter de nodemailer
+const emailUser = process.env.EMAIL_USER
+const emailPass = process.env.EMAIL_PASS
+
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: "carlosperalta19102004@gmail.com",
-    pass: "qnon qmtd qkjs lfkv",
+    user: emailUser,
+    pass: emailPass,
   },
 })
 
@@ -71,8 +74,8 @@ export async function POST(request: NextRequest) {
 
     // Configurar el email
     const mailOptions = {
-      from: "carlosperalta19102004@gmail.com",
-      to: "carlosperalta19102004@gmail.com",
+      from: emailUser,
+      to: emailUser,
       subject: `Nuevo mensaje de contacto: ${subject}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">

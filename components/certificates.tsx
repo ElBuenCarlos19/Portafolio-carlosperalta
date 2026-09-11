@@ -47,7 +47,7 @@ export function Certificates({ dict }: CertificatesProps) {
   ]
 
   return (
-    <section id="certificates" className="py-16 sm:py-20 lg:py-24 bg-dark relative overflow-hidden">
+    <section id="certificates" className="py-16 sm:py-20 lg:py-24 relative z-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -137,10 +137,6 @@ export function Certificates({ dict }: CertificatesProps) {
           ))}
         </motion.div>
       </div>
-
-      {/* Background decoration */}
-      <div className="absolute top-0 left-0 w-64 h-64 bg-gradient-to-br from-yellow/5 to-transparent rounded-full blur-3xl" />
-      <div className="absolute bottom-0 right-0 w-64 h-64 bg-gradient-to-tl from-orange/5 to-transparent rounded-full blur-3xl" />
     </section>
   )
 }

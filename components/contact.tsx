@@ -142,9 +142,7 @@ export function Contact({ dict }: ContactProps) {
   }
 
   return (
-    <section id="contact" className="py-16 sm:py-20 lg:py-24 bg-dark relative overflow-hidden">
-
-      
+    <section id="contact" className="py-16 sm:py-20 lg:py-24 relative z-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -414,10 +412,6 @@ export function Contact({ dict }: ContactProps) {
           </motion.div>
         )}
       </AnimatePresence>
-
-      {/* Background decoration */}
-      <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-bl from-mint/10 to-transparent rounded-full blur-3xl" />
-      <div className="absolute bottom-0 left-120 w-64 h-64 bg-gradient-to-tr from-blue/10 to-transparent rounded-full blur-3xl" />
     </section>
   )
 }

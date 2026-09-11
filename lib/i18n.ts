@@ -1,9 +1,8 @@
-import { desc, label } from "framer-motion/client"
-
 const dictionaries = {
   es: {
     nav: {
       about: "Sobre mí",
+      experience: "Trayectoria",
       projects: "Proyectos",
       certificates: "Certificados",
       music: "Música",
@@ -90,9 +89,55 @@ const dictionaries = {
         },
       },
     },
+    experience: {
+      title: "Trayectoria & Experiencia",
+      subtitle: "Mi camino formativo, semilleros de investigación y desarrollo de software",
+      items: [
+        {
+          period: "2022 - Actualidad",
+          role: "Ingeniería de Sistemas",
+          institution: "Corporación Universitaria Latinoamericana (CUL)",
+          location: "Barranquilla, Colombia",
+          description:
+            "Formación académica en ciclo de vida del software, arquitectura de sistemas, IoT, redes, bases de datos y metodologías ágiles (Scrum).",
+          badge: "Educación",
+          type: "education",
+        },
+        {
+          period: "2023 - Actualidad",
+          role: "Investigador & Desarrollador Móvil",
+          institution: "Semillero de Investigación CUL (AppBaqPark)",
+          location: "Barranquilla, Colombia",
+          description:
+            "Desarrollo de aplicación móvil y frontend para la gestión y aprovechamiento de parques biosaludables de Barranquilla. Ponente en 'Cruzando Fronteras a Través del Saber'.",
+          badge: "Investigación",
+          type: "research",
+        },
+        {
+          period: "2023 - Actualidad",
+          role: "Desarrollador de Software & Freelance",
+          institution: "Proyectos Independientes & Comerciales",
+          location: "Remoto / Colombia",
+          description:
+            "Diseño e implementación de aplicaciones web modernas, plataformas para control de hardware IoT (ESP32), software empresarial para Proyectcom y soluciones con Machine Learning.",
+          badge: "Desarrollo",
+          type: "work",
+        },
+      ],
+    },
     projects: {
       title: "Mis Proyectos",
       subtitle: "Algunos de los proyectos en los que he trabajado",
+      filterAll: "Todos",
+      categories: {
+        all: "Todos",
+        web: "Web & Full Stack",
+        mobile_iot: "Móvil & IoT",
+        data_ml: "Datos & ML",
+        desktop: "Desktop",
+      },
+      searchPlaceholder: "Buscar proyecto por nombre o tecnología...",
+      noProjectsFound: "No se encontraron proyectos con ese criterio.",
       unavailable: {
         title: "No Disponible",
         message: "Este enlace no está disponible o el repositorio es privado",
@@ -220,6 +265,7 @@ const dictionaries = {
   en: {
     nav: {
       about: "About me",
+      experience: "Experience",
       projects: "Projects",
       certificates: "Certificates",
       music: "Music",
@@ -306,9 +352,55 @@ const dictionaries = {
         },
       },
     },
+    experience: {
+      title: "Experience & Journey",
+      subtitle: "My academic path, research seedbeds, and software development journey",
+      items: [
+        {
+          period: "2022 - Present",
+          role: "Systems Engineering",
+          institution: "Corporación Universitaria Latinoamericana (CUL)",
+          location: "Barranquilla, Colombia",
+          description:
+            "Comprehensive training in software lifecycle, systems architecture, IoT, computer networks, relational/non-relational databases, and agile methodologies (Scrum).",
+          badge: "Education",
+          type: "education",
+        },
+        {
+          period: "2023 - Present",
+          role: "Researcher & Mobile Developer",
+          institution: "CUL Research Seedbed (AppBaqPark)",
+          location: "Barranquilla, Colombia",
+          description:
+            "Development of a mobile app and frontend for managing and leveraging outdoor bio-healthy parks in Barranquilla. Speaker at 'Cruzando Fronteras a Través del Saber'.",
+          badge: "Research",
+          type: "research",
+        },
+        {
+          period: "2023 - Present",
+          role: "Software Developer & Freelancer",
+          institution: "Independent & Commercial Projects",
+          location: "Remote / Colombia",
+          description:
+            "Design and deployment of modern web applications, IoT hardware control systems (ESP32), business management platforms (Proyectcom), and Machine Learning models.",
+          badge: "Development",
+          type: "work",
+        },
+      ],
+    },
     projects: {
       title: "My Projects",
       subtitle: "Some of the projects I've worked on",
+      filterAll: "All",
+      categories: {
+        all: "All",
+        web: "Web & Full Stack",
+        mobile_iot: "Mobile & IoT",
+        data_ml: "Data & ML",
+        desktop: "Desktop",
+      },
+      searchPlaceholder: "Search project by title or technology...",
+      noProjectsFound: "No projects found matching that criteria.",
       unavailable: {
         title: "Not Available",
         message: "This link is not available or the repository is private",

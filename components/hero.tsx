@@ -265,7 +265,7 @@ export function Hero({ dict }: HeroProps) {
 
       {/* Scroll Indicator */}
       <motion.div
-        className="absolute bottom-4 sm:bottom-8 left-1/2 transform -translate-x-1/2"
+        className="absolute bottom-6 sm:bottom-10 left-1/2 transform -translate-x-1/2 z-20"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 1.5 }}
@@ -273,11 +273,17 @@ export function Hero({ dict }: HeroProps) {
         <motion.div
           animate={{ y: [0, 10, 0] }}
           transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
-          className="text-mint cursor-pointer"
+          onClick={() => document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })}
+          className="text-mint cursor-pointer p-2 rounded-full hover:bg-mint/10 transition-colors"
+          title="Scroll down"
         >
           <FaArrowDown className="w-5 h-5 sm:w-6 sm:h-6" />
         </motion.div>
       </motion.div>
+
+      {/* Atmospheric Horizon Fade & Light Bridge hacia la siguiente sección */}
+      <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-dark via-dark/60 to-transparent pointer-events-none z-10" />
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-3/4 max-w-4xl h-[1px] bg-gradient-to-r from-transparent via-mint/40 to-transparent pointer-events-none z-10 shadow-[0_0_15px_rgba(83,210,178,0.5)]" />
 
       {/* Floating Elements - Hidden on mobile for performance */}
       <div className="hidden md:block">

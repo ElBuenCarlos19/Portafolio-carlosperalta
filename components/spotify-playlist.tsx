@@ -25,7 +25,7 @@ export function SpotifyPlaylist({ dict }: SpotifyPlaylistProps) {
   return (
     <section
       id="music"
-      className="py-16 sm:py-20 lg:py-24 bg-gradient-to-br from-dark to-dark/95 relative overflow-hidden"
+      className="py-16 sm:py-20 lg:py-24 relative z-10"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
@@ -49,8 +49,33 @@ export function SpotifyPlaylist({ dict }: SpotifyPlaylistProps) {
             viewport={{ once: true }}
             className="bg-gradient-to-br from-dark/80 to-dark/60 backdrop-blur-sm border border-mint/20 rounded-xl p-6 sm:p-8"
           >
+            {/* Header con Ecualizador Animado */}
+            <div className="flex items-center justify-between mb-6 px-1">
+              <div className="flex items-center gap-2.5">
+                <FaSpotify className="text-[#1DB954] w-6 h-6" />
+                <span className="text-white font-semibold text-sm sm:text-base">Coding Playlist</span>
+              </div>
+              <div className="flex items-end gap-1 h-5">
+                {[0.4, 0.8, 0.5, 1, 0.6, 0.9].map((height, idx) => (
+                  <motion.span
+                    key={idx}
+                    animate={{
+                      scaleY: [height, 0.2, 1, 0.4],
+                    }}
+                    transition={{
+                      duration: 0.8 + idx * 0.15,
+                      repeat: Number.POSITIVE_INFINITY,
+                      ease: "easeInOut",
+                    }}
+                    className="w-1 bg-mint rounded-full origin-bottom"
+                    style={{ height: "100%" }}
+                  />
+                ))}
+              </div>
+            </div>
+
             {/* Spotify Embed */}
-            <div className="rounded-xl overflow-hidden mb-8">
+            <div className="rounded-xl overflow-hidden mb-8 border border-white/5 shadow-2xl">
               <iframe
                 title="Spotify Embed: Playlist"
                 src={`https://open.spotify.com/embed/playlist/${playlistId}?utm_source=generator&theme=0`}
@@ -84,10 +109,6 @@ export function SpotifyPlaylist({ dict }: SpotifyPlaylistProps) {
           </motion.div>
         </div>
       </div>
-
-      {/* Background decoration */}
-      <div className="absolute top-1/4 left-0 w-64 h-64 bg-gradient-to-br from-green-500/5 to-transparent rounded-full blur-3xl" />
-      <div className="absolute bottom-1/4 right-0 w-64 h-64 bg-gradient-to-tl from-mint/5 to-transparent rounded-full blur-3xl" />
     </section>
   )
 }
